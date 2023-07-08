@@ -1,0 +1,90 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 14px 42px;
+  margin: 0 $page-horizontal-padding-mobile * -1;
+  background-color: $color-white-second;
+
+  @include onLargeScreen {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: $color-blue;
+    letter-spacing: 3.4px;
+    margin-bottom: 16px;
+  
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      @include onLargeScreen {
+        margin-left: 96px;
+      }
+    }
+    
+  }
+
+  &__description {
+    text-transform: lowercase;
+    @include onLargeScreen {
+      text-align: left;
+    }
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  
+    text-align: center;
+
+    &-bold {
+      display: block;
+      text-transform: uppercase;
+      font-weight: 600;
+
+    }
+
+    margin-bottom: 32px;
+  }
+
+  &__label {
+    opacity: 0;
+  }
+
+  &__input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid $color-blue;
+    padding: 11px 17px;
+    &--phone {
+      margin-bottom: 16px;
+    }
+    &-wrapper {
+      @include onLargeScreen {
+        margin-right: 96px;
+      }
+    }
+    &--invalid {
+      border-color: $color-red-first;
+    }
+  }
+
+  &__submit-button {
+    width: 100%;
+    padding: 11px 17px;
+    font-size: 16px;
+    font-weight: bold;
+    color: $color-white-first;
+    background-color: $color-black;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+
+}

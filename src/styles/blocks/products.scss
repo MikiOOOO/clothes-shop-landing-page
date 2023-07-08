@@ -1,0 +1,169 @@
+.products {
+  &__title {
+    margin-bottom:31px;
+  }
+  &--mobile {
+
+    @media (min-width: 1300px) {
+      display: none;
+    }
+  }
+  &--desktop {
+    display: none;
+    @media (min-width: 1300px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__carousel {
+    display: flex;
+    gap: 50px;
+    overflow: hidden;
+
+    @include onLargeScreen {
+      gap: 30px;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      max-width: 241px;
+
+      @include onLargeScreen {
+        max-width: 341px;
+        &:nth-child(odd) .products__carousel-icon-made-in-pl {
+          display: none;
+        }
+
+        &:nth-child(odd) .products__carousel-icon-new {
+          margin-top: 16px;
+        }
+      }
+    
+      &-price {
+        &-new {
+          color: $color-red-first;
+          margin-right: 16px;
+        }
+        &-old {
+          color: $color-gray-second;
+        }
+      }
+
+      &-sex {
+        padding: 3px 6px;
+        border: 1px solid black;
+      }
+
+      &-title {
+        text-align: center;
+        display: inline;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+
+    &-photo {
+      width: 241px;
+    
+      &-wrapper {
+        position: relative;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      @include onLargeScreen {
+        width: 341px;
+      }
+    }
+
+
+    &-icons {
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 241px;
+
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+        &:first-child {
+          justify-content: space-between;
+        }
+        &:last-child {
+          gap: 10px;
+        }
+      }
+      
+      @include onLargeScreen {
+        width: 341px;
+      }
+    }
+    
+    &-icon {
+      &-heart {
+        width: 34px;
+        height: 34px;
+        background-color: rgba(255, 255, 255, 0.55);
+        border-radius: 50%;
+        margin-left: 16px;
+        margin-top: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      &-discount {
+        background-color: rgba(0, 0, 0, 0.48);
+        margin-bottom: 40px;
+        width: 57px;
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+      }
+
+      &-made-in-pl {
+        margin-top: 16px;
+        width: 136px;
+      }
+
+      &-new {
+        width: 82px;
+        align-self: flex-end;
+      }
+
+      &-made-in-pl, &-new {
+        background-color: $color-white-first;
+        color: $color-black;
+        text-align: center;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+
+.splide__slide:nth-child(odd) .products__carousel-icon-made-in-pl {
+  display: none;
+}
+
+.splide__slide:nth-child(odd) .products__carousel-icon-new {
+  margin-top: 16px;
+}

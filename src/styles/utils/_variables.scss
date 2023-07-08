@@ -1,0 +1,27 @@
+$color-white-first: #fff;
+$color-white-second: #F4F4F4;
+$color-blue: #0068FF;
+$color-red-first: #FF0102;
+$color-red-second: #FF6B6B;
+$color-black: #000000;
+$color-gray-first: #3C413E;
+$color-gray-second: #939393;
+$color-brown: #91745A;
+
+
+$image-size-mobile: 386px;
+$button-y-distance-mobile: 44px;
+$button-x-distance-mobile: 122px;
+
+$button-bottom-distance-mobile: $button-y-distance-mobile / $image-size-mobile * 100%;
+$button-left-distance-mobile: $button-x-distance-mobile / $image-size-mobile * 100%;
+
+$image-size-desktop: 897px;
+$button-y-distance-desktop: 128px;
+$button-x-distance-desktop: 353px;
+
+$button-bottom-distance-desktop: $button-y-distance-desktop / $image-size-desktop * 100%;
+$button-left-distance-desktop: $button-x-distance-desktop / $image-size-desktop * 100%;
+
+$page-horizontal-padding-mobile: 14px;
+$page-horizontal-padding-desktop: 50px;

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unlimitech Store - Where you can buy the best clothes and fashion accessories. Explore our wide range of products and enjoy great discounts.">
+    <meta name="keywords" content="clothes, fashion, store, online, discounts">
+    <link rel="stylesheet" href="../public/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <title>unlimitech</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Unlimitech Clothing Store",
+        "url": "https://www.example.com",
+        "logo": "https://www.example.com/logo.png",
+        "description": "Unlimitech Store - Where you can buy the best clothes and fashion accessories. Explore our wide range of products and enjoy great discounts.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-123-456-7890",
+          "contactType": "customer support"
+        },
+        "sameAs": [
+          "https://www.facebook.com/unlimitech",
+          "https://www.instagram.com/unlimitech"
+        ]
+      }
+    </script>
+  </head>
+
+  <body class="body">
+    <header class="body__header">
+      <section class="bar-info">
+        <h3 class="bar-info__title">happy hours tylko przez 24 godziny</h3>
+        <article class="bar-info__content">
+          <p class="bar-info__content-title">SPIESZ SIĘ:</p>
+          <p class="bar-info__content-text">
+            <span class="bar-info__content-value">0</span> dni
+          </p>
+          <p class="bar-info__content-text">
+            <span class="bar-info__content-value">11</span> godz.
+          </p>
+          <p class="bar-info__content-text">
+            <span class="bar-info__content-value">51</span> min.
+          </p>
+          <p class="bar-info__content-text">
+            <span class="bar-info__content-value">23</span> sek.
+          </p>
+        </article>
+      </section>
+      <nav class="navbar-desktop">
+        <img src="./images/logos/logo-store-name.svg" alt="store name logo" class="navbar-desktop__logo">
+        <div class="navbar-desktop__list">
+          <ul class="navbar-desktop__list-wrapper">
+            <li class="navbar-desktop__item">
+              <a href="#" class="navbar-desktop__link">
+                <img src="./images/icons/icon-facebook.svg" alt="facebook icon" class="navbar-desktop__icon">
+              </a>
+            </li>
+            <li class="navbar-desktop__item">
+              <a href="#" class="navbar-desktop__link">
+                <img src="./images/icons/icon-instagram.svg" alt="instagram icon" class="navbar-desktop__icon">
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-desktop__list-wrapper">
+            <li class="navbar-desktop__item">
+              <a href="#" class="navbar-desktop__link">
+                <img src="./images/icons/icon-search.svg" alt="search icon" class="navbar-desktop__icon">
+              </a>
+            </li>
+            <li class="navbar-desktop__item">
+              <a href="#" class="navbar-desktop__link">
+                <img src="./images/icons/icon-heart--blue.svg" alt="favorite icon" class="navbar-desktop__icon navbar-desktop__icon--shopping-bag">
+              </a>
+            </li>
+            <li class="navbar-desktop__item">
+              <a href="#" class="navbar-desktop__link">
+                <img src="./images/icons/icon-user.svg" alt="user page icon" class="navbar-desktop__icon">
+              </a>
+            </li>
+            <li class="navbar-desktop__item">
+              <a href="#" class="navbar-desktop__link">
+                <img src="./images/icons/icon-shopping-bag.svg" alt="shopping bag icon" class="navbar-desktop__icon">
+              </a>
+            </li>
+            <li class="navbar-desktop__cart-state">
+              <div class="navbar-desktop__cart-state-items-count">
+                0
+              </div>
+              <div class="navbar-desktop__cart-state-price">
+                0,00ZŁ
+              </div>
+            </li>
+          </ul>
+        </div>
+        <ul class="navbar-desktop__menu-list">
+          <li class="navbar-desktop__menu-item">
+            <a class="navbar-desktop__menu-link">kobiet</a>
+          </li>
+          <li class="navbar-desktop__menu-item">
+            <a class="navbar-desktop__menu-link">mężczyźni</a>
+          </li>
+          <li class="navbar-desktop__menu-item">
+            <a class="navbar-desktop__menu-link">dzieci</a>
+          </li>
+          <li class="navbar-desktop__menu-item">
+            <a class="navbar-desktop__menu-link navbar-desktop__menu-link--red">wszystko do -60%</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="navbar-mobile">
+        <img src="./images/logos/logo-store-name.svg" alt="store name logo" class="navbar-mobile__logo">
+        <ul class="navbar-mobile__list" id="navbar-mobile__list">
+          <li>
+            <a href="#navbar-mobile__menu">
+              <img src="./images/icons/icon-burger-menu.svg" alt="burger menu icon" class="navbar-mobile__burger-menu-icon" id="navbar-mobile__burger-menu-icon--list">
+            </a>
+          </li>
+          <li class="navbar-mobile__item">
+            <a href="#" class="navbar-mobile__link">
+              <img src="./images/icons/icon-search.svg" alt="search icon" class="navbar-mobile__icon">
+            </a>
+          </li>
+          <li class="navbar-mobile__item">
+            <a href="#" class="navbar-mobile__link">
+              <img src="./images/icons/icon-heart--blue.svg" alt="favorite icon" class="navbar-mobile__icon">
+            </a>
+          </li>
+          <li class="navbar-mobile__item">
+            <a href="#" class="navbar-mobile__link">
+              <img src="./images/icons/icon-user.svg" alt="user page icon" class="navbar-mobile__icon">
+            </a>
+          </li>
+          <li class="navbar-mobile__item navbar-mobile__item--cart">
+            <a href="#" class="navbar-mobile__link">
+              <img src="./images/icons/icon-shopping-bag.svg" alt="shopping bag icon" class="navbar-mobile__icon">
+            </a>
+          </li>
+          <li class="navbar-mobile__item">
+            <a href="#" class="navbar-mobile__link">
+              <img src="./images/icons/icon-facebook.svg" alt="facebook icon" class="navbar-mobile__icon">
+            </a>
+          </li>
+          <li class="navbar-mobile__item">
+            <a href="#" class="navbar-mobile__link">
+              <img src="./images/icons/icon-instagram.svg" alt="instagram icon" class="navbar-mobile__icon">
+            </a>
+          </li>
+        </ul>
+        <div class="navbar-mobile__menu" id="navbar-mobile__menu">
+          <div class="navbar-mobile__burger-menu-wrapper">
+            <a href="#navbar-mobile__list" class="navbar-mobile__burger-menu-icon">
+              <img src="./images/icons/icon-burger-menu.svg" alt="burger menu icon" class="navbar-mobile__burger-menu-icon">
+            </a>
+          </div>
+          <ul class="navbar-mobile__menu-items">
+            <li class="navbar-mobile__menu-item">
+              <a href="#" class="navbar-mobile__menu-link">kobiet</a>
+            </li>
+            <li class="navbar-mobile__menu-item">
+              <a href="#" class="navbar-mobile__menu-link">mężczyźni</a>
+            </li>
+            <li class="navbar-mobile__menu-item">
+              <a href="#" class="navbar-mobile__menu-link">dzieci</a>
+            </li>
+            <li class="navbar-mobile__menu-item">
+              <a href="#" class="navbar-mobile__menu-link navbar-mobile__menu-link--red">wszystko do -60%</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="bar-info">
+        <div class="bar-info__wrapper-animation">
+          <article class="bar-info__content">
+            <div class="bar-info__content-container">
+              <img src="./images/icons/icon-heart--filled.svg" alt="heart icon" class="bar-info__content-icon">
+              <h2 class="bar-info__content-title">nowa kolekcja już online</h2>
+              <img src="./images/icons/icon-heart--filled.svg" alt="heart icon" class="bar-info__content-icon">
+            </div>
+          </article>
+          <p class="bar-info__description">
+            <span class="bar-info__description-line">sprawdź uzupełnione</span>
+            <span class="bar-info__description-line">bestsellery & mega rabaty</span>
+            <span class="bar-info__description-line">na wszystkie nowości</span>
+          </p>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="body__banners banners">
+        <div class="banners__container">
+          <img src="./images/banners/banner-new-releases-mobile.png" alt="new collection image" class="banners__image">
+          <a href="#" class="banners__button">
+            <img src="./images/buttons/button-new-releases-mobile.png" alt="buy new released clothes" class="banners__button-image">
+          </a>
+        </div>
+        <div class="banners__container">
+          <img src="./images/banners/banner-summer-mobile.png" alt="summer collection" class="banners__image">
+          <a href="#" class="banners__button">
+            <img src="./images/buttons/button-summer-mobile.png" alt="check out summer collection" class="banners__button-image">
+          </a>
+        </div>
+      </section>
+      <section class="body__logos logos">
+        <h1 class="logos__title">najpopularniejsi producenci</h1>
+        <div class="splide" id="splide-1">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="./images/logos/logo-adidas-mobile.png" alt="adidas logo" class="logos__logo-item">
+              </li>
+              <li class="splide__slide">
+                <img src="./images/logos/logo-ck-mobile.png" alt="calvin klein logo" class="logos__logo-item">
+              </li>
+              <li class="splide__slide">
+                <img src="./images/logos/logo-columbia-mobile.png" alt="columbia logo" class="logos__logo-item">
+              </li>
+              <li class="splide__slide">
+                <img src="./images/logos/logo-diesel-mobile.png" alt="diesel logo" class="logos__logo-item">
+              </li>
+              <li class="splide__slide">
+                <img src="./images/logos/logo-dkny-mobile.png" alt="dkny logo" class="logos__logo-item">
+              </li>
+              <li class="splide__slide">
+                <img src="./images/logos/logo-levis-mobile.png" alt="levis logo" class="logos__logo-item">
+              </li>
+              <li class="splide__slide">
+                <img src="./images/logos/logo-adidas-mobile.png" alt="adidas logo" class="logos__logo-item">
+              </li>
+              <li class="splide__slide">
+                <img src="./images/logos/logo-ck-mobile.png" alt="calvin klein logo" class="logos__logo-item">
+              </li>
+              <li class="splide__slide">
+                <img src="./images/logos/logo-columbia-mobile.png" alt="columbia logo" class="logos__logo-item">
+              </li>
+              <li class="splide__slide">
+                <img src="./images/logos/logo-diesel-mobile.png" alt="diesel logo" class="logos__logo-item">
+              </li>
+              <li class="splide__slide">
+                <img src="./images/logos/logo-dkny-mobile.png" alt="dkny logo" class="logos__logo-item">
+              </li>
+              <li class="splide__slide">
+                <img src="./images/logos/logo-levis-mobile.png" alt="levis-logo" class="logos__logo-item">
+              </li>
+            </ul>
+            <div class="splide__arrows">
+              <button class="splide__arrow splide__arrow--prev">
+                <img src="./images/icons/icon-arrow-left.svg" alt="switch button left">
+              </button>
+              <button class="splide__arrow splide__arrow--next">
+                <img src="./images/icons/icon-arrow-right--hover.svg" alt="switch button right">
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="body__banners banners">
+        <div class="banners__container">
+          <img src="./images/banners/banner-men-collection-mobile.png" alt="men collection" class="banners__image banners__image--men-collection">
+          <a href="#" class="banners__button banners__button--men-collection">
+            <img src="./images/buttons/button-men-collection-mobile.png" alt="see more of men collection" class="banners__button-image">
+          </a>
+        </div>
+
+      </section>
+      <section class="body__products products products--mobile">
+        <h1 class="products__title">sprawdź nasze nowości w obniżonych cenach</h1>
+        <div class="splide" role="group" id="splide-2" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="products__carousel-item">
+                  <div class="products__carousel-photo-wrapper">
+                    <img src="./images/photos/photo-dress-1-desktop.png" alt="dress" class="products__carousel-photo">
+                    <div class="products__carousel-icons">
+                      <div class="products__carousel-icons-wrapper">
+                        <div class="products__carousel-icon-heart">
+                          <img src="./images/icons/icon-heart--gray.svg" alt="" class="products__carousel-icon-heart-image">
+                        </div>
+                        <div class="products__carousel-icon-discount">-10%</div>
+                      </div>
+                      <div class="products__carousel-icons-wrapper">
+                        <div class="products__carousel-icon-made-in-pl">USZYTE W POLSCE</div>
+                        <div class="products__carousel-icon-new">NOWOŚĆ</div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="products__carousel-item-title">
+                    AGATHE - SATYNOWA <br>SUKIENKA MAXI W KWIATY
+                  </h3>
+                  <p class="products__carousel-item-price">
+                    <span class="products__carousel-item-price-new">152.99zł</span>
+                    <span class="products__carousel-item-price-old"><del>169,99zł</del></span>
+                  </p>
+                  <p class="products__carousel-item-sex">uni</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="products__carousel-item">
+                  <div class="products__carousel-photo-wrapper">
+                    <img src="./images/photos/photo-dress-2-desktop.png" alt="dress" class="products__carousel-photo">
+                    <div class="products__carousel-icons">
+                      <div class="products__carousel-icons-wrapper">
+                        <div class="products__carousel-icon-heart">
+                          <img src="./images/icons/icon-heart--gray.svg" alt="" class="products__carousel-icon-heart-image">
+                        </div>
+                        <div class="products__carousel-icon-discount">-10%</div>
+                      </div>
+                      <div class="products__carousel-icons-wrapper">
+                        <div class="products__carousel-icon-made-in-pl">USZYTE W POLSCE</div>
+                        <div class="products__carousel-icon-new">NOWOŚĆ</div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="products__carousel-item-title">
+                    AGATHE - SATYNOWA <br>SUKIENKA MAXI W KWIATY
+                  </h3>
+                  <p class="products__carousel-item-price">
+                    <span class="products__carousel-item-price-new">152.99zł</span>
+                    <span class="products__carousel-item-price-old"><del>169,99zł</del></span>
+                  </p>
+                  <p class="products__carousel-item-sex">uni</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="products__carousel-item">
+                  <div class="products__carousel-photo-wrapper">
+                    <img src="./images/photos/photo-dress-1-desktop--hover.png" alt="dress" class="products__carousel-photo">
+                    <div class="products__carousel-icons">
+                      <div class="products__carousel-icons-wrapper">
+                        <div class="products__carousel-icon-heart">
+                          <img src="./images/icons/icon-heart--gray.svg" alt="" class="products__carousel-icon-heart-image">
+                        </div>
+                        <div class="products__carousel-icon-discount">-10%</div>
+                      </div>
+                      <div class="products__carousel-icons-wrapper">
+                        <div class="products__carousel-icon-made-in-pl">USZYTE W POLSCE</div>
+                        <div class="products__carousel-icon-new">NOWOŚĆ</div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="products__carousel-item-title">
+                    AGATHE - SATYNOWA <br>SUKIENKA MAXI W KWIATY
+                  </h3>
+                  <p class="products__carousel-item-price">
+                    <span class="products__carousel-item-price-new">152.99zł</span>
+                    <span class="products__carousel-item-price-old"><del>169,99zł</del></span>
+                  </p>
+                  <p class="products__carousel-item-sex">uni</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="products__carousel-item">
+                  <div class="products__carousel-photo-wrapper">
+                    <img src="./images/photos/photo-dress-2-desktop.png" alt="dress" class="products__carousel-photo">
+                    <div class="products__carousel-icons">
+                      <div class="products__carousel-icons-wrapper">
+                        <div class="products__carousel-icon-heart">
+                          <img src="./images/icons/icon-heart--gray.svg" alt="" class="products__carousel-icon-heart-image">
+                        </div>
+                        <div class="products__carousel-icon-discount">-10%</div>
+                      </div>
+                      <div class="products__carousel-icons-wrapper">
+                        <div class="products__carousel-icon-made-in-pl">USZYTE W POLSCE</div>
+                        <div class="products__carousel-icon-new">NOWOŚĆ</div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="products__carousel-item-title">
+                    AGATHE - SATYNOWA <br>SUKIENKA MAXI W KWIATY
+                  </h3>
+                  <p class="products__carousel-item-price">
+                    <span class="products__carousel-item-price-new">152.99zł</span>
+                    <span class="products__carousel-item-price-old"><del>169,99zł</del></span>
+                  </p>
+                  <p class="products__carousel-item-sex">uni</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="products__carousel-item">
+                  <div class="products__carousel-photo-wrapper">
+                    <img src="./images/photos/photo-dress-1-desktop.png" alt="dress" class="products__carousel-photo">
+                    <div class="products__carousel-icons">
+                      <div class="products__carousel-icons-wrapper">
+                        <div class="products__carousel-icon-heart">
+                          <img src="./images/icons/icon-heart--gray.svg" alt="" class="products__carousel-icon-heart-image">
+                        </div>
+                        <div class="products__carousel-icon-discount">-10%</div>
+                      </div>
+                      <div class="products__carousel-icons-wrapper">
+                        <div class="products__carousel-icon-made-in-pl">USZYTE W POLSCE</div>
+                        <div class="products__carousel-icon-new">NOWOŚĆ</div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="products__carousel-item-title">
+                    AGATHE - SATYNOWA <br>SUKIENKA MAXI W KWIATY
+                  </h3>
+                  <p class="products__carousel-item-price">
+                    <span class="products__carousel-item-price-new">152.99zł</span>
+                    <span class="products__carousel-item-price-old"><del>169,99zł</del></span>
+                  </p>
+                  <p class="products__carousel-item-sex">uni</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="body__products products products--desktop">
+        <div class="products__container">
+          <h1 class="products__title">sprawdź nasze nowości w obniżonych cenach</h1>
+          <ul class="products__carousel">
+            <li class="products__carousel-item">
+              <div class="products__carousel-photo-wrapper">
+                <img src="./images/photos/photo-dress-1-desktop.png" alt="dress" class="products__carousel-photo">
+                <div class="products__carousel-icons">
+                  <div class="products__carousel-icons-wrapper">
+                    <div class="products__carousel-icon-heart">
+                      <img src="./images/icons/icon-heart--gray.svg" alt="dress" class="products__carousel-icon-heart-image">
+                    </div>
+                    <div class="products__carousel-icon-discount">-10%</div>
+                  </div>
+                  <div class="products__carousel-icons-wrapper">
+                    <div class="products__carousel-icon-made-in-pl">USZYTE W POLSCE</div>
+                    <div class="products__carousel-icon-new">NOWOŚĆ</div>
+                  </div>
+                </div>
+              </div>
+              <h3 class="products__carousel-item-title">
+                AGATHE - SATYNOWA <br> SUKIENKA MAXI W KWIATY
+              </h3>
+              <p class="products__carousel-item-price">
+                <span class="products__carousel-item-price-new">152.99zł</span>
+                <span class="products__carousel-item-price-old"><del>169,99zł</del></span>
+              </p>
+              <p class="products__carousel-item-sex">uni</p>
+            </li>
+            <li class="products__carousel-item">
+              <div class="products__carousel-photo-wrapper">
+                <img src="./images/photos/photo-dress-2-desktop.png" alt="dress" class="products__carousel-photo">
+                <div class="products__carousel-icons">
+                  <div class="products__carousel-icons-wrapper">
+                    <div class="products__carousel-icon-heart">
+                      <img src="./images/icons/icon-heart--gray.svg" alt="dress" class="products__carousel-icon-heart-image">
+                    </div>
+                    <div class="products__carousel-icon-discount">-10%</div>
+                  </div>
+                  <div class="products__carousel-icons-wrapper">
+                    <div class="products__carousel-icon-made-in-pl">USZYTE W POLSCE</div>
+                    <div class="products__carousel-icon-new">NOWOŚĆ</div>
+                  </div>
+                </div>
+              </div>
+              <h3 class="products__carousel-item-title">
+                AGATHE - SATYNOWA <br> SUKIENKA MAXI W KWIATY
+              </h3>
+              <p class="products__carousel-item-price">
+                <span class="products__carousel-item-price-new">152.99zł</span>
+                <span class="products__carousel-item-price-old"><del>169,99zł</del></span>
+              </p>
+              <p class="products__carousel-item-sex">uni</p>
+            </li>
+            <li class="products__carousel-item">
+              <div class="products__carousel-photo-wrapper">
+                <img src="./images/photos/photo-dress-1-desktop--hover.png" alt="dress" class="products__carousel-photo">
+                <div class="products__carousel-icons">
+                  <div class="products__carousel-icons-wrapper">
+                    <div class="products__carousel-icon-heart">
+                      <img src="./images/icons/icon-heart--gray.svg" alt="dress" class="products__carousel-icon-heart-image">
+                    </div>
+                    <div class="products__carousel-icon-discount">-10%</div>
+                  </div>
+                  <div class="products__carousel-icons-wrapper">
+                    <div class="products__carousel-icon-made-in-pl">USZYTE W POLSCE</div>
+                    <div class="products__carousel-icon-new">NOWOŚĆ</div>
+                  </div>
+                </div>
+              </div>
+              <h3 class="products__carousel-item-title">
+                AGATHE - SATYNOWA <br> SUKIENKA MAXI W KWIATY
+              </h3>
+              <p class="products__carousel-item-price">
+                <span class="products__carousel-item-price-new">152.99zł</span>
+                <span class="products__carousel-item-price-old"><del>169,99zł</del></span>
+              </p>
+              <p class="products__carousel-item-sex">uni</p>
+            </li>
+            <li class="products__carousel-item">
+              <div class="products__carousel-photo-wrapper">
+                <img src="./images/photos/photo-dress-2-desktop.png" alt="dress" class="products__carousel-photo">
+                <div class="products__carousel-icons">
+                  <div class="products__carousel-icons-wrapper">
+                    <div class="products__carousel-icon-heart">
+                      <img src="./images/icons/icon-heart--gray.svg" alt="dress" class="products__carousel-icon-heart-image">
+                    </div>
+                    <div class="products__carousel-icon-discount">-10%</div>
+                  </div>
+                  <div class="products__carousel-icons-wrapper">
+                    <div class="products__carousel-icon-made-in-pl">USZYTE W POLSCE</div>
+                    <div class="products__carousel-icon-new">NOWOŚĆ</div>
+                  </div>
+                </div>
+              </div>
+              <h3 class="products__carousel-item-title">
+                AGATHE - SATYNOWA <br> SUKIENKA MAXI W KWIATY
+              </h3>
+              <p class="products__carousel-item-price">
+                <span class="products__carousel-item-price-new">152.99zł</span>
+                <span class="products__carousel-item-price-old"><del>169,99zł</del></span>
+              </p>
+              <p class="products__carousel-item-sex">uni</p>
+            </li>
+            <li class="products__carousel-item">
+              <div class="products__carousel-photo-wrapper">
+                <img src="./images/photos/photo-dress-1-desktop.png" alt="dress" class="products__carousel-photo">
+                <div class="products__carousel-icons">
+                  <div class="products__carousel-icons-wrapper">
+                    <div class="products__carousel-icon-heart">
+                      <img src="./images/icons/icon-heart--gray.svg" alt="heart icon" class="products__carousel-icon-heart-image">
+                    </div>
+                    <div class="products__carousel-icon-discount">-10%</div>
+                  </div>
+                  <div class="products__carousel-icons-wrapper">
+                    <div class="products__carousel-icon-made-in-pl">USZYTE W POLSCE</div>
+                    <div class="products__carousel-icon-new">NOWOŚĆ</div>
+                  </div>
+                </div>
+              </div>
+              <h3 class="products__carousel-item-title">
+                AGATHE - SATYNOWA <br> SUKIENKA MAXI W KWIATY
+              </h3>
+              <p class="products__carousel-item-price">
+                <span class="products__carousel-item-price-new">152.99zł</span>
+                <span class="products__carousel-item-price-old"><del>169,99zł</del></span>
+              </p>
+              <p class="products__carousel-item-sex">uni</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <form class="form">
+        <div class="form__title-wrapper">
+          <h1 class="form__title">newsletter</h1>
+          <p class="form__description">
+            Dołącz do newslettera i bądź na bieżąco ze wszystkimi
+            <span class="form__description-bold">promocjami i nowościami</span>
+          </p>
+        </div>
+        <div class="form__input-wrapper">
+          <label for="form__input-email" class="form__label">
+            podaj email
+          </label>
+          <input type="email" class="form__input" name="email" required id="form__input-email" placeholder="Twój email">
+          <label for="form__input-phone" class="form__label">
+            podaj telefon
+          </label>
+          <input type="text" class="form__input form__input--phone" name="phone" id="form__input-phone" placeholder="Telefon" required>
+          <button class="form__submit-button">
+            Dołącz teraz
+          </button>
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <h3 class="footer__title">unlimitech 2022</h3>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.11/dist/js/splide.min.js"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+
+</html>

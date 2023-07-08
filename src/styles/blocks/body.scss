@@ -1,0 +1,29 @@
+.body {
+  padding: 0 $page-horizontal-padding-mobile;
+  overflow-x: hidden;
+
+  @include onLargeScreen {
+    padding: 0 $page-horizontal-padding-desktop;
+  }
+
+  &__header {
+    margin-bottom: 16px;
+
+    @include onLargeScreen{
+      margin-bottom: 25px;
+    }
+  }
+  
+  &__banners {
+    margin-bottom: 40px;
+  }
+
+  &__logos {
+    margin-bottom: 43px;
+  }
+
+  &__products {
+    margin-bottom: 64px;
+  }
+}
+

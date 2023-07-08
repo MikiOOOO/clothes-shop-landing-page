@@ -1,0 +1,44 @@
+.logos {
+  &__title {
+    margin-bottom: 24px;
+
+    @include onDesktop {
+      margin-bottom: 48px;
+    }
+  }
+  &__logo-item {
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}
+
+.splide__arrow svg {
+  display: none;
+}
+.splide__arrow--prev, .splide__arrow--next {
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 0 !important;
+  color: red !important;
+  background: none !important;
+}
+.splide__arrow--prev {
+  left: 0 !important;
+}
+.splide__arrow--next {
+  right: 0 !important;
+}
+
+.splide:not(:last-child) {
+  display: flex;
+  justify-content: center;
+}
+
+.splide__slide {
+  display: flex;
+  justify-content: center;
+}

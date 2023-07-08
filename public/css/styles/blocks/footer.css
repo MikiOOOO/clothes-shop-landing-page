@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__title {
+  padding: 16px 0;
+  font-weight: 500;
+  letter-spacing: 0.42px;
+}
+
+/*# sourceMappingURL=footer.css.map */
