@@ -112,31 +112,31 @@ const handleImagesLoad = (screenWidth) => {
 
   
   if (screenWidth >= 1920) {
-    bannerMenCollection.src = './images/banners/banner-men-collection-large.png';
-    buttonMenCollection.src = './images/buttons/button-men-collection-desktop.png';
+    bannerMenCollection.src = './src/images/banners/banner-men-collection-large.png';
+    buttonMenCollection.src = './src/images/buttons/button-men-collection-desktop.png';
   } else if (screenWidth >= 768) {
-    bannerMenCollection.src = './images/banners/banner-men-collection-desktop.png';
+    bannerMenCollection.src = './src/images/banners/banner-men-collection-desktop.png';
   } else {
-    bannerMenCollection.src = './images/banners/banner-men-collection-mobile.png';
+    bannerMenCollection.src = './src/images/banners/banner-men-collection-mobile.png';
   }
 
   if (screenWidth >= 1024) {
-    bannerNewReleases.src = './images/banners/banner-new-releases-desktop.png';
-    bannerSummer.src = './images/banners/banner-summer-desktop.png';
-    buttonNewReleases.src = './images/buttons/button-new-releases-desktop.png';
-    buttonSummer.src = './images/buttons/button-summer-desktop.png';
+    bannerNewReleases.src = './src/images/banners/banner-new-releases-desktop.png';
+    bannerSummer.src = './src/images/banners/banner-summer-desktop.png';
+    buttonNewReleases.src = './src/images/buttons/button-new-releases-desktop.png';
+    buttonSummer.src = './src/images/buttons/button-summer-desktop.png';
   } else {
-    bannerNewReleases.src = './images/banners/banner-new-releases-mobile.png';
-    bannerSummer.src = './images/banners/banner-summer-mobile.png';
-    buttonNewReleases.src = './images/buttons/button-new-releases-mobile.png';
-    buttonSummer.src = './images/buttons/button-summer-mobile.png';
+    bannerNewReleases.src = './src/images/banners/banner-new-releases-mobile.png';
+    bannerSummer.src = './src/images/banners/banner-summer-mobile.png';
+    buttonNewReleases.src = './src/images/buttons/button-new-releases-mobile.png';
+    buttonSummer.src = './src/images/buttons/button-summer-mobile.png';
   }
 }
 
 const handleHeartToggle = (currentSrc, currentHeart) => {
   currentHeart.src = currentSrc.includes('--gray') 
-    ? './images/icons/icon-heart--filled.svg'
-    : './images/icons/icon-heart--gray.svg';
+    ? './src/images/icons/icon-heart--filled.svg'
+    : './src/images/icons/icon-heart--gray.svg';
 }
 
 const handlePhotoChange = (oldSrc, currentPhoto) => {
