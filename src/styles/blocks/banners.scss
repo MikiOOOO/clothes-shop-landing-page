@@ -56,11 +56,9 @@
       margin-bottom: 20px;
 
       @include onLargeScreen {
-        // margin-bottom: $button-bottom-distance-desktop;
         margin: 0 0 75px 42%;
       }
     }
   }
-   
 }
 

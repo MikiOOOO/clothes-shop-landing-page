@@ -1,4 +1,3 @@
-
 @keyframes scroll {
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
@@ -45,11 +44,6 @@
       margin-left: 48px;
     }
 
-    &-title {
-      @include onDesktop {
-        // margin-right: 16px;
-      }
-    }
     &-value {
       color: $color-red-second;
       width:2em;
@@ -87,7 +81,6 @@
       flex-direction: row;
       gap: 5px;
     }
-    
   }
 }
 

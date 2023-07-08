@@ -7,14 +7,17 @@
     width: 250px;
     margin: 0 auto;
   }
+
   &__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     &-wrapper {
       display: flex;
       gap: 16px;
       position: relative;
+  
       &::after {
         content: '';
         position: absolute;
@@ -32,20 +35,25 @@
       }
     }
   }
+
   &__icon {
     width: 20px;
     height: 20px;
   }
+
   &__cart-state {
     display: flex;
     gap: 4px;
+
     &-items-count::after {
       content: '|';
     }
   }
+
   &-burger-menu {
     padding: 15px;
   }
+
   &__menu { 
     &-list {
       display: flex;

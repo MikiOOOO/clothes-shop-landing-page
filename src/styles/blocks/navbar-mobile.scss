@@ -72,9 +72,6 @@
     height: 100vh;
     overflow: hidden;
 
-   
-
-
     &-link { 
       &:hover {
         cursor: pointer;
@@ -82,7 +79,6 @@
       &--red {
         color: $color-red-first;
       }
-      
     }
 
     &-items {
