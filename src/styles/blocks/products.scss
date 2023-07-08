@@ -2,23 +2,27 @@
   &__title {
     margin-bottom:31px;
   }
-  &--mobile {
 
+  &--mobile {
     @media (min-width: 1300px) {
       display: none;
     }
   }
+
   &--desktop {
     display: none;
+
     @media (min-width: 1300px) {
       display: flex;
       justify-content: center;
     }
   }
+
   &__container {
     display: flex;
     flex-direction: column;
   }
+
   &__carousel {
     display: flex;
     gap: 50px;
@@ -38,6 +42,7 @@
 
       @include onLargeScreen {
         max-width: 341px;
+
         &:nth-child(odd) .products__carousel-icon-made-in-pl {
           display: none;
         }
@@ -52,6 +57,7 @@
           color: $color-red-first;
           margin-right: 16px;
         }
+
         &-old {
           color: $color-gray-second;
         }
@@ -101,9 +107,11 @@
       &-wrapper {
         display: flex;
         flex-direction: column;
+
         &:first-child {
           justify-content: space-between;
         }
+
         &:last-child {
           gap: 10px;
         }

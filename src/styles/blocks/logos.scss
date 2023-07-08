@@ -6,6 +6,7 @@
       margin-bottom: 48px;
     }
   }
+
   &__logo-item {
     opacity: 0.5;
 
@@ -19,6 +20,7 @@
 .splide__arrow svg {
   display: none;
 }
+
 .splide__arrow--prev, .splide__arrow--next {
   width: 36px !important;
   height: 36px !important;
@@ -26,9 +28,11 @@
   color: red !important;
   background: none !important;
 }
+
 .splide__arrow--prev {
   left: 0 !important;
 }
+
 .splide__arrow--next {
   right: 0 !important;
 }

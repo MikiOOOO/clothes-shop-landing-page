@@ -112,12 +112,12 @@ const handleImageLoad = (screenWidth) => {
 
   
   if (screenWidth >= 1920) {
-    buttonMenCollection.src = './src/images/buttons/button-men-collection-desktop.png';
-    bannerMenCollection.src ='./src/images/banners/banner-men-collection-large.png';
+    buttonMenCollection.src = './src/images/buttons/button-men-collection-desktop.webp';
+    bannerMenCollection.src ='./src/images/banners/banner-men-collection-large.webp';
   } else if (screenWidth >= 768) {
-    bannerMenCollection.src = './src/images/banners/banner-men-collection-desktop.png';
+    bannerMenCollection.src = './src/images/banners/banner-men-collection-desktop.webp';
   } else {
-    bannerMenCollection.src = './src/images/banners/banner-men-collection-mobile.png';
+    bannerMenCollection.src = './src/images/banners/banner-men-collection-mobile.webp';
   }
 
  

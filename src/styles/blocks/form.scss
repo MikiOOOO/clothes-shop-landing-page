@@ -44,7 +44,6 @@
       display: block;
       text-transform: uppercase;
       font-weight: 600;
-
     }
 
     margin-bottom: 32px;
@@ -59,14 +58,17 @@
     box-sizing: border-box;
     border: 1px solid $color-blue;
     padding: 11px 17px;
+  
     &--phone {
       margin-bottom: 16px;
     }
+  
     &-wrapper {
       @include onLargeScreen {
         margin-right: 96px;
       }
     }
+  
     &--invalid {
       border-color: $color-red-first;
     }

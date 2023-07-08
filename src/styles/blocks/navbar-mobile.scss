@@ -6,9 +6,9 @@
   justify-content: space-between;
   position: relative;
 
-
   &__item {
     height: 20px;
+
     &--cart::after {
       content: '1';
       position: relative;
@@ -76,6 +76,7 @@
       &:hover {
         cursor: pointer;
       }
+
       &--red {
         color: $color-red-first;
       }
