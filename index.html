@@ -192,15 +192,39 @@
     <main>
       <section class="body__banners banners">
         <div class="banners__container">
-          <img src="./src/images/banners/banner-new-releases-mobile.png" alt="new collection image" class="banners__image">
+          <img srcset="./src/images/banners/banner-new-releases-mobile.png 1024w,
+            ./src/images/banners/banner-new-releases-desktop.png 1920w"
+            sizes="(max-width: 1024px) 100vw,1920px"
+            src="./src/images/banners/banner-new-releases-desktop.png"
+            alt="new collection image" class="banners__image"
+          >
+
           <a href="#" class="banners__button">
-            <img src="./src/images/buttons/button-new-releases-mobile.png" alt="buy new released clothes" class="banners__button-image">
+            <img src="./src/images/buttons/button-new-releases-mobile.png"
+              alt="buy new released clothes"
+              class="banners__button-image"
+              style="max-width: 100%;"
+              media="(min-width: 1024px)"
+              srcset="./src/images/buttons/button-new-releases-desktop.png"
+            >
           </a>
         </div>
         <div class="banners__container">
-          <img src="./src/images/banners/banner-summer-mobile.png" alt="summer collection" class="banners__image">
+          <img srcset="./src/images/banners/banner-summer-mobile.png 1024w,
+            ./src/images/banners/banner-summer-desktop.png 1920w"
+            sizes="(max-width: 1024px) 100vw,1920px"
+            src="./src/images/banners/banner-summer-desktop.png"
+            alt="new collection image" class="banners__image"
+          >
+
           <a href="#" class="banners__button">
-            <img src="./src/images/buttons/button-summer-mobile.png" alt="check out summer collection" class="banners__button-image">
+            <img src="./src/images/buttons/button-summer-mobile.png"
+              alt="buy new released clothes"
+              class="banners__button-image"
+              style="max-width: 100%;"
+              media="(min-width: 1024px)"
+              srcset="./src/images/buttons/button-summer-desktop.png"
+            >
           </a>
         </div>
       </section>

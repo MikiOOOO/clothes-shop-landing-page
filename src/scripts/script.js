@@ -97,7 +97,7 @@ const handleNavbarLoad = (screenWidth) => {
   } 
 }
 
-const handleImagesLoad = (screenWidth) => {
+const handleImageLoad = (screenWidth) => {
   const [
     buttonNewReleases,
     buttonSummer,
@@ -112,25 +112,15 @@ const handleImagesLoad = (screenWidth) => {
 
   
   if (screenWidth >= 1920) {
-    bannerMenCollection.src = './src/images/banners/banner-men-collection-large.png';
     buttonMenCollection.src = './src/images/buttons/button-men-collection-desktop.png';
+    bannerMenCollection.src ='./src/images/banners/banner-men-collection-large.png';
   } else if (screenWidth >= 768) {
     bannerMenCollection.src = './src/images/banners/banner-men-collection-desktop.png';
   } else {
     bannerMenCollection.src = './src/images/banners/banner-men-collection-mobile.png';
   }
 
-  if (screenWidth >= 1024) {
-    bannerNewReleases.src = './src/images/banners/banner-new-releases-desktop.png';
-    bannerSummer.src = './src/images/banners/banner-summer-desktop.png';
-    buttonNewReleases.src = './src/images/buttons/button-new-releases-desktop.png';
-    buttonSummer.src = './src/images/buttons/button-summer-desktop.png';
-  } else {
-    bannerNewReleases.src = './src/images/banners/banner-new-releases-mobile.png';
-    bannerSummer.src = './src/images/banners/banner-summer-mobile.png';
-    buttonNewReleases.src = './src/images/buttons/button-new-releases-mobile.png';
-    buttonSummer.src = './src/images/buttons/button-summer-mobile.png';
-  }
+ 
 }
 
 const handleHeartToggle = (currentSrc, currentHeart) => {
@@ -156,7 +146,7 @@ const handlePhotoChange = (oldSrc, currentPhoto) => {
 
 window.addEventListener('resize', () => {
   const currentWidth = event.target.innerWidth;
-  handleImagesLoad(currentWidth);
+  handleImageLoad(currentWidth);
   handleNavbarLoad(currentWidth);
 })
 
@@ -226,7 +216,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
   
 
-handleImagesLoad(window.innerWidth);
+handleImageLoad(window.innerWidth);
 handleNavbarLoad(window.innerWidth);
 handleTimeChange();
 
