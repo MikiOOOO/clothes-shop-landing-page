@@ -112,7 +112,7 @@ const handleImageLoad = (screenWidth) => {
 
   
   if (screenWidth >= 1920) {
-    buttonMenCollection.src = './src/images/buttons/button-men-collection-desktop.webp';
+    buttonMenCollection.src = './src/images/buttons/button-men-collection-desktop.png';
     bannerMenCollection.src ='./src/images/banners/banner-men-collection-large.webp';
   } else if (screenWidth >= 768) {
     bannerMenCollection.src = './src/images/banners/banner-men-collection-desktop.webp';
@@ -133,12 +133,12 @@ const handlePhotoChange = (oldSrc, currentPhoto) => {
   let newSrc;
 
   if (!oldSrc.includes('--hover')) {
-    newSrc = oldSrc.split('.png');
+    newSrc = oldSrc.split('.webp');
     newSrc.push('--hover');
-    newSrc.push('.png');
+    newSrc.push('.webp');
   } else {
-    newSrc = oldSrc.split('--hover.png');
-    newSrc.push('.png');
+    newSrc = oldSrc.split('--hover.webp');
+    newSrc.push('.webp');
   }
 
   currentPhoto.src = newSrc.join('');
