@@ -1,6 +1,6 @@
 # Clothes Store Landing Page
 
-Link: [DEMO](https://mikioooo.github.io/unlimitech-store-landing-page/)
+Link: [DEMO](https://mikioooo.github.io/clothes-shop-landing-page/)
 
 Tech Stack: HTML, SCSS, JavaScript (with Splide.js library)
 
